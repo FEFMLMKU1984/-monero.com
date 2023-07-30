@@ -19,16 +19,25 @@ import quake2Image from "../../../../assets/png/games/quake2.png";
 import unrealImage from "../../../../assets/png/games/unreal-tournament.png";
 import wormsImg from "../../../../assets/png/games/worms.png";
 import ccImg from "../../../../assets/png/games/cc.png";
-import cc2Img from "../../../../assets/png/games/cc2.png";
+import avpImg from "../../../../assets/png/games/avp.png";
 import cStrike from "../../../../assets/png/games/cstrike.png";
 import lemmingsImg from "../../../../assets/png/games/lemmings.png";
 import AboutMonero from "../../../modals/AboutMonero";
 import FlatEarth from "../../../modals/FlatEarth";
 import FakeMoon from "../../../modals/FakeMoon";
-
+import Worms from "../../../modals/Worms";
+import Command from "../../../modals/Command";
+import Lemmings from "../../../modals/Lemmings";
+import Quake from "../../../modals/Quake";
+import Command2 from "../../../modals/Command2";
+import Quake2 from "../../../modals/Quake2";
 import Readme from "../../../modals/Readme";
-
+import UnrealTournament from "../../../modals/UnrealTournament";
+import Paint from "../../../modals/Paint";
 import Milkers from "../../../modals/Milkers";
+import Sonic from "../../../modals/Sonic";
+import CartoonStrike from "../../../modals/CartoonStrike";
+import AlienVsPredator from "../../../modals/AlienVsPredator";
 
 interface DesktopProps {}
 
@@ -136,7 +145,107 @@ export const desktopItems = [
     width: isMobile ? 300 : 650,
     show: isMobile ? true : true,
   },
+  {
+    title: "Sonic Multiplayer",
+    icon: <img src={sonicImage} alt="Sonic" />,
+    shown: false,
+    url: undefined,
+    children: <Sonic />,
+    height: isMobile ? 300 : 510,
+    width: isMobile ? 350 : 900,
+    show: isMobile ? false : true,
+  },
+  {
+    title: "CStrike",
+    icon: <img src={cStrike} alt="Cartoon Strike" />,
+    shown: false,
+    url: undefined,
+    children: <CartoonStrike />,
+    height: isMobile ? 300 : 655,
+    width: isMobile ? 350 : 960,
+    show: isMobile ? false : true,
+  },
+  {
+    title: "Quake 1",
+    icon: <img src={quake1Image} alt="Quake 1 Img" />,
+    shown: false,
+    url: undefined,
+    children: <Quake />,
+    height: isMobile ? 300 : 600,
+    width: isMobile ? 350 : 800,
+    show: isMobile ? false : true,
+  },
 
+  {
+    title: "Quake 2",
+    icon: <img src={quake2Image} alt="Quake 2 Img" />,
+    shown: false,
+    url: undefined,
+    children: <Quake2 />,
+    height: isMobile ? 300 : 600,
+    width: isMobile ? 350 : 800,
+    show: isMobile ? false : true,
+  },
+  {
+    title: "Unreal Tournament",
+    icon: <img src={unrealImage} alt="Img" />,
+    shown: false,
+    url: undefined,
+    children: <UnrealTournament />,
+    height: isMobile ? 300 : 600,
+    width: isMobile ? 350 : 800,
+    show: isMobile ? false : true,
+  },
+  {
+    title: "Worms Armageddon",
+    icon: <img src={wormsImg} alt="Worms" />,
+    shown: false,
+    url: undefined,
+    children: <Worms />,
+    height: isMobile ? 300 : 700,
+    width: isMobile ? 350 : 800,
+    show: isMobile ? false : true,
+  },
+  {
+    title: "Red Alert",
+    icon: <img src={ccImg} alt="C&C Red Alert" />,
+    shown: false,
+    url: undefined,
+    children: <Command />,
+    height: isMobile ? 300 : 600,
+    width: isMobile ? 350 : 800,
+    show: isMobile ? false : true,
+  },
+  {
+    title: "Lemmings",
+    icon: <img src={lemmingsImg} alt="Lemmings" />,
+    shown: false,
+    url: undefined,
+    children: <Lemmings />,
+    height: isMobile ? 250 : 550,
+    width: isMobile ? 350 : 800,
+    show: isMobile ? true : true,
+  },
+  {
+    title: "Alien vs. Predator",
+    icon: <img src={avpImg} alt="Alien vs Predator" />,
+    shown: false,
+    url: undefined,
+    children: <AlienVsPredator />,
+    height: isMobile ? 250 : 450,
+    width: isMobile ? 350 : 600,
+    show: isMobile ? false : true,
+  },
+  {
+    title: "Paint",
+    icon: <Mspaint />,
+    shown: false,
+    url: undefined,
+    height: isMobile ? 400 : 600,
+    width: isMobile ? 350 : 800,
+    show: isMobile ? true : true,
+    children: <Paint />,
+  },
   {
     title: "Info Wars",
     icon: <DesktopIconSC src={alexJones} />,
