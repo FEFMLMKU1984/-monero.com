@@ -7,11 +7,13 @@ import dextoolsImage from "../../../../assets/png/dextools.png";
 import telegramImage from "../../../../assets/png/telegram.png";
 import twitterImage from "../../../../assets/png/twitter.png";
 import milkersImage from "../../../../assets/png/milkers.png";
-import mainLogo from "../../../../assets/png/logo.png";
+import mainLogo from "../../../../assets/jpg/logo.jpeg";
 import tickerMonero from "../../../../assets/gif/tickermonero.gif";
 import fakelandingImage from "../../../../assets/png/landingicon.png";
 import titanicScam from "../../../../assets/png/titanic-scam.png";
 import alexJones from "../../../../assets/png/alexjones.png";
+import truthIcon from "../../../../assets/png/memsicon.png";
+import marioKartImg from "../../../../assets/gif/mariokart64.gif";
 import img1984 from "../../../../assets/jpg/1984.jpeg";
 import quake1Image from "../../../../assets/png/games/quake1.png";
 import sonicImage from "../../../../assets/png/games/sonic.png";
@@ -38,6 +40,7 @@ import Milkers from "../../../modals/Milkers";
 import Sonic from "../../../modals/Sonic";
 import CartoonStrike from "../../../modals/CartoonStrike";
 import AlienVsPredator from "../../../modals/AlienVsPredator";
+import MarioKart64 from "../../../modals/MarioKart64";
 
 interface DesktopProps {}
 
@@ -55,13 +58,13 @@ export const desktopItems = [
     show: isMobile ? true : true,
   },
   {
-    title: "flat_earth.exe",
-    icon: <Earth />,
+    title: "truth.exe",
+    icon: <DesktopIconSC src={truthIcon} />,
     shown: false,
     url: undefined,
     children: <FlatEarth />,
-    height: isMobile ? 360 : 620,
-    width: isMobile ? 350 : 600,
+    height: isMobile ? 360 : 600,
+    width: isMobile ? 350 : 900,
     show: isMobile ? true : true,
   },
   {
@@ -234,6 +237,16 @@ export const desktopItems = [
     children: <AlienVsPredator />,
     height: isMobile ? 250 : 450,
     width: isMobile ? 350 : 600,
+    show: isMobile ? false : true,
+  },
+  {
+    title: "Mario Kart 64",
+    icon: <DesktopIconSC src={marioKartImg} />,
+    shown: false,
+    url: undefined,
+    children: <MarioKart64 />,
+    height: isMobile ? 250 : 600,
+    width: isMobile ? 350 : 800,
     show: isMobile ? false : true,
   },
   {
