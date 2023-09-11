@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import bgGif from "../../../../assets/gif/believe.gif";
 import bgImg from "../../../../assets/jpg/bg.jpg";
 
 export const DesktopSC = styled.div`
@@ -49,7 +48,7 @@ export const DesktopSC = styled.div`
     width: 100%;
     max-width: 200px;
     z-index: 3;
-    position: relative;
+    position: inherit;
   }
 
   .readme {
@@ -71,6 +70,8 @@ export const DesktopSC = styled.div`
   }
 
   .about {
+    overflow-y: scroll;
+    height: 100%;
     .title {
       display: flex;
       align-items: center;
@@ -110,7 +111,14 @@ export const DesktopSC = styled.div`
     }
   }
 
+  .readme {
+    overflow-y: scroll;
+    height: 100%;
+  }
+
   .milkers {
+    overflow-y: scroll;
+    height: 100%;
     .pron-images {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
